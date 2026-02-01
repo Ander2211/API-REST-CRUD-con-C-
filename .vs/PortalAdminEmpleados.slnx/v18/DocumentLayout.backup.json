@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\migrations\\20260131024257_cambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\migrations\\20260131024257_cambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\migrations\\20260131023856_migracion inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\migrations\\20260131023856_migracion inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\data\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\data\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\modelos\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\modelos\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\modelos\\addempleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\modelos\\addempleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\modelos\\updateempleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\modelos\\updateempleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|c:\\users\\ander\\source\\repos\\portaladminempleados\\portaladminempleados\\migrations\\conexionmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964919C1-5AD4-1F1F-F090-928FA2938866}|PortalAdminEmpleados\\PortalAdminEmpleados.csproj|solutionrelative:portaladminempleados\\migrations\\conexionmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\WeatherForecast.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T05:43:09.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\Entidades\\Empleados.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Modelos\\Entidades\\Empleados.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\Entidades\\Empleados.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Modelos\\Entidades\\Empleados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:12:07.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260131024257_Cambios.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\20260131024257_Cambios.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Migrations\\20260131024257_Cambios.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\20260131024257_Cambios.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Migrations\\20260131024257_Cambios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:42:57.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Data\\Conexion.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Data\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Data\\Conexion.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Data\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:16:14.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\appsettings.json",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\appsettings.json",
+              "RelativeToolTip": "PortalAdminEmpleados\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-31T02:37:52.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Program.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Program.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Program.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:29:56.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260131023856_Migracion Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\20260131023856_Migracion Inicial.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Migrations\\20260131023856_Migracion Inicial.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\20260131023856_Migracion Inicial.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Migrations\\20260131023856_Migracion Inicial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:38:57.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Controllers\\EmpleadosController.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Controllers\\EmpleadosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:44:46.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConexionModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\ConexionModelSnapshot.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Migrations\\ConexionModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Migrations\\ConexionModelSnapshot.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Migrations\\ConexionModelSnapshot.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:39:30.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateEmpleadoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\UpdateEmpleadoDto.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Modelos\\UpdateEmpleadoDto.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\UpdateEmpleadoDto.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Modelos\\UpdateEmpleadoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T05:32:24.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEmpleadoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\AddEmpleadoDto.cs",
+              "RelativeDocumentMoniker": "PortalAdminEmpleados\\Modelos\\AddEmpleadoDto.cs",
+              "ToolTip": "C:\\Users\\Ander\\source\\repos\\PortalAdminEmpleados\\PortalAdminEmpleados\\Modelos\\AddEmpleadoDto.cs",
+              "RelativeToolTip": "PortalAdminEmpleados\\Modelos\\AddEmpleadoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:57:21.927Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
