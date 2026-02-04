@@ -94,7 +94,7 @@ namespace PortalAdminEmpleados.Controllers
             dbContext.SaveChanges();
 
             return Ok(empleado);
-        }
+        } 
 
     }
 }
