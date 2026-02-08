@@ -12,6 +12,7 @@ namespace PortalAdminEmpleados.Data
         }
 
         public DbSet<Empleados> Empleados { get; set; }
+        public DbSet<User> Users => Set<User>();
         public DbSet<Categorias> Categorias => Set<Categorias>();
         public DbSet<Productos> Productos => Set<Productos>();
 

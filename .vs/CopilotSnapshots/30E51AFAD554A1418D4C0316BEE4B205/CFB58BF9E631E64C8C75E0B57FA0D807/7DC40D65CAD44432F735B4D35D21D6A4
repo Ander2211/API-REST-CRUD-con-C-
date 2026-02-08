@@ -1,0 +1,76 @@
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using PortalAdminEmpleados.Modelos.Entidades;
+
+namespace PortalAdminEmpleados.Helpers
+{
+    public class JwtHelper
+    {
+        private readonly IConfiguration _configuracion;
+
+        public JwtHelper(IConfiguration configuration)
+        { 
+             _configuracion = configuration;
+        }
+
+        public string GererateToken (User user)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            var key = Encoding.ASCII.GetBytes(_configuracion["Jwt:Key"]);
+
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Name, user.Usuario),
+                new Claim(ClaimTypes.Role, user.Rol),
+                new Claim("IsActive", user.IsActive.ToString())
+            };
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.UtcNow.AddHours(Convert.ToDouble(_configuracion["Jwt:ExpireHours"])),
+                Issuer = _configuracion["Jwt:Issuer"],
+                Audience = _configuracion["Jwt:Audience"],
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+        public ClaimsPrincipal ValidateToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuracion["Jwt:Key"]);
+
+            try
+            {
+                var principal = tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = true,
+                    ValidIssuer = _configuracion["Jwt:Issuer"],
+                    ValidateAudience = true,
+                    ValidAudience = _configuracion["Jwt:Audience"],
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                }, out SecurityToken validatedToken);
+
+                return principal;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+    }
+}

@@ -19,7 +19,7 @@ namespace PortalAdminEmpleados.Controllers
 
         // GET: api/productos?page=1&pageSize=50
         [HttpGet]
-        public async Task<IActionResult> GetProductos(int page = 1, int pageSize = 50, CancellationToken cancellationToken = default)
+        public async Task<IActionResult> GetProductos(int page = 1, int pageSize = 9, CancellationToken cancellationToken = default)
         {
             page = Math.Max(1, page);
             pageSize = Math.Clamp(pageSize, 1, 500);

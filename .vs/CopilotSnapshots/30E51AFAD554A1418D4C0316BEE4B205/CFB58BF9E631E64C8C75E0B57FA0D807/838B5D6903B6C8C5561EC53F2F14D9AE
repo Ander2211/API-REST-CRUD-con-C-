@@ -1,0 +1,68 @@
+﻿using PortalAdminEmpleados.Data;
+using PortalAdminEmpleados.Helpers;
+using PortalAdminEmpleados.Modelos;
+using PortalAdminEmpleados.Modelos.Entidades;
+
+namespace PortalAdminEmpleados.Services
+{
+    public class AuthService : IAuthService
+    {
+        private readonly Conexion _context;
+        private readonly JwtHelper _jwtHelper;
+
+        public AuthService(Conexion context, JwtHelper jwtHelper)
+        {
+            _context = context;
+            _jwtHelper = jwtHelper;
+        }
+
+        public async Task<LoginResponse> Authenticate(LoginRequest request)
+        {
+            // Buscar usuario por email
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == request.Email && u.IsActive);
+
+            if (user == null)
+                throw new UnauthorizedAccessException("Credenciales inválidas");
+
+            // Verificar contraseña (usando BCrypt)
+            if (!BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+                throw new UnauthorizedAccessException("Credenciales inválidas");
+
+            // Verificar si es administrador
+            if (!user.Role.Contains("Admin"))
+                throw new UnauthorizedAccessException("Acceso denegado. Se requieren privilegios de administrador");
+
+            // Actualizar último login
+            user.LastLogin = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            // Generar token JWT
+            var token = _jwtHelper.GenerateToken(user);
+
+            return new LoginResponse
+            {
+                Token = token,
+                Expiration = DateTime.UtcNow.AddHours(Convert.ToDouble(_configuracion["Jwt:ExpireHours"])),
+                User = new LoginResponse.UserInfo
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Username = user.Username,
+                    Role = user.Role
+                }
+            };
+        }
+
+        public async Task<User> GetUserById(int id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
+        public async Task<bool> ValidateToken(string token)
+        {
+            var principal = _jwtHelper.ValidateToken(token);
+            return principal != null;
+        }
+    }
+}

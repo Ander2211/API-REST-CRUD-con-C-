@@ -1,0 +1,73 @@
+﻿using Microsoft.EntityFrameworkCore;
+using PortalAdminEmpleados.Data;
+using PortalAdminEmpleados.Helpers;
+using PortalAdminEmpleados.Modelos;
+using PortalAdminEmpleados.Modelos.Entidades;
+using Microsoft.Extensions.Configuration;
+
+namespace PortalAdminEmpleados.Services
+{
+    public class AuthService : IAuthService
+    {
+        private readonly Conexion _context;
+        private readonly JwtHelper _jwtHelper;
+        private readonly IConfiguration _configuracion;
+
+        public AuthService(Conexion context, JwtHelper jwtHelper, IConfiguration configuracion)
+        {
+            _context = context;
+            _jwtHelper = jwtHelper;
+            _configuracion = configuracion;
+        }
+
+        public async Task<LoginResponse> Authenticate(LoginRequest request)
+        {
+            // Buscar usuario por email
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == request.Email && u.IsActive);
+
+            if (user == null)
+                throw new UnauthorizedAccessException("Credenciales inválidas");
+
+            // Verificar contraseña (usando BCrypt)
+            if (!BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+                throw new UnauthorizedAccessException("Credenciales inválidas");
+
+            // Verificar si es administrador
+            if (!user.Rol.Contains("Admin"))
+                throw new UnauthorizedAccessException("Acceso denegado. Se requieren privilegios de administrador");
+
+            // Actualizar último login
+            user.LastLogin = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            // Generar token JWT
+            var token = _jwtHelper.GenerateToken(user);
+
+            return new LoginResponse
+            {
+                Token = token,
+                Expiration = DateTime.UtcNow.AddHours(Convert.ToDouble(_configuracion["Jwt:ExpireHours"])),
+                User = new LoginResponse.UserInfo
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Username = user.Usuario,
+                    Role = user.Rol
+                }
+            };
+        }
+
+        public async Task<User> GetUserById(int id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
+        public Task<bool> ValidateToken(string token)
+        {
+            var principal = _jwtHelper.ValidateToken(token);
+            return Task.FromResult(principal != null);
+        }
+    }
+}
+
